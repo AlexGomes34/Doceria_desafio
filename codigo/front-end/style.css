@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-login {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 30px;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-login h2 {
+    align-self: center;
+}
+
+.card-login input {
+    height: 3.5vh;
+    border-radius: 10px;
+    border: 1px solid #444;
+    background-color: #ffffff;
+    color: #000000;
+    padding-inline: 10px;
+}
+
+.card-login button {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+
+.home {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 5vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5vw;
+    padding-top: 5vh;
+}
+
+.tabela-produtos {
+    padding-inline: 5vw;
+}
+
+.btn {
+    background-color: #1a1a1a;
+    color: white;
+    font-weight: bold;
+    border-color: transparent;
+    border-radius: 5px;
+    padding-inline: 15px;
+    padding-block: 8px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn:hover {
+    background-color: #333333;
+}
+
+.btn-cancelar {
+    background-color: #6e6e6e;
+}
+
+.btn-cancelar:hover {
+    background-color: #4b4b4b;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    min-width: 1000px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background-color: #1a1a1a;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.actions-cell .btn {
+    opacity: 1;
+    visibility: visible;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 12px;
+}

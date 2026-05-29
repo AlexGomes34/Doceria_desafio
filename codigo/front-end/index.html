@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./index.js" defer></script>
+    <title>Doceria IANES</title>
+</head>
+
+<body>
+    <section class="login" id="login">
+        <div class="card-login">
+            <h2>Login</h2>
+            <label for="email">Email:</label>
+            <input type="text" id="email">
+
+            <label for="senha">Senha:</label>
+            <input type="text" id="senha">
+
+            <button class="btn btn-login" id="btnLogin"> Entrar</button>
+        </div>
+    </section>
+
+    <section class="home" id="home" style="display: none;">
+        <div class="header">
+            <h2>Doces Registrados</h2>
+            <div>
+                <button class="btn btn-cadastrar" id="btnCadastrar">Cadastrar</button>
+                <button class="btn btn-registro" id="btnRegistro">Histórico</button>
+            </div>
+        </div>
+        <div class="tabela-produtos">
+            <table id="tabela-bolos">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Recheio</th>
+                        <th>Cobertura</th>
+                        <th>Massa</th>
+                        <th>Peso</th>
+                        <th>Nº Porções</th>
+                        <th>Data de Vencimento</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela">
+                    </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="registro-produtos" id="registroProdutos" style="display: none;">
+        <div class="header">
+            <h2>Histórico de Doces Excluídos</h2>
+            <button class="btn btn-registro" id="btnVoltar">Voltar</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>ID Prod.</th>
+                    <th>Nome do Produto</th>
+                    <th>Recheio</th>
+                    <th>Cobertura</th>
+                    <th>Massa</th>
+                    <th>Peso</th>
+                    <th>Nº Porções</th>
+                    <th>Vencimento</th>
+                </tr>
+            </thead>
+            <tbody id="corpo-tabela-excluidos">
+            </tbody>
+        </table>
+    </section>
+
+    <div id="modalProduto" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2 id="modalTitulo">Editar Doce</h2>
+            
+            <input type="hidden" id="doceId">
+            
+            <div class="form-group">
+                <label for="formNome">Nome:</label>
+                <input type="text" id="formNome">
+            </div>
+            <div class="form-group">
+                <label for="formRecheio">Recheio:</label>
+                <input type="text" id="formRecheio">
+            </div>
+            <div class="form-group">
+                <label for="formCobertura">Cobertura:</label>
+                <input type="text" id="formCobertura">
+            </div>
+            <div class="form-group">
+                <label for="formMassa">Massa:</label>
+                <input type="text" id="formMassa">
+            </div>
+            <div class="form-group">
+                <label for="formPeso">Peso:</label>
+                <input type="text" id="formPeso">
+            </div>
+            <div class="form-group">
+                <label for="formPorcoes">Nº Porções:</label>
+                <input type="number" id="formPorcoes">
+            </div>
+            <div class="form-group">
+                <label for="formVencimento">Vencimento:</label>
+                <input type="date" id="formVencimento">
+            </div>
+            
+            <div class="modal-actions">
+                <button class="btn btn-salvar" id="btnSalvar">Salvar</button>
+                <button class="btn btn-cancelar" id="btnFecharModal">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

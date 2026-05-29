@@ -1,0 +1,8 @@
+ETAPA - 1 - Engenharia de Requisitos: 34min
+ETAPA - 2 - Modelagem de Dados: 9min 40s
+ETAPA - 3 - Banco de Dados: 13min 25s
+ETAPA - 4 - Plano de Testes: 7min 13s
+ETAPA - 5 - Back-End: 49min 58s
+ETAPA - 6 - Front-End: 16min 36s
+ETAPA - 7 - Integração: 42min 41s
+ETAPA - 8 - Miscelânias: 10min 32s
